@@ -101,7 +101,7 @@ Una vez generado el hash BCrypt, puedes registrar el administrador directamente 
  La tabla se llama `users` y contiene las columnas `password` , `role` y `username`,  ejecuta una consulta con esta estructura:
 
 ```sql
-INSERT INTO admins ("user", password, role)
+INSERT INTO admins (user, password, role)
 VALUES (
     'admin',
     '$2a$10$PEGA_AQUI_EL_HASH_BCRYPT_COMPLETO',
