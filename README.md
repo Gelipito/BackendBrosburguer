@@ -88,7 +88,7 @@ Importante: No publiques tus contraseñas en GitHub ni compartas el archivo con 
 
 ### 1. Abre Git Bash
 
-Abre Git Bash en Windows o si estas en springboot le das terminal-new terminal Y abres  gitbash.
+Abre Git Bash en Windows o si estas en springboot le das terminal-new terminal y abres  gitbash.
 
 <img width="851" height="565" alt="image" src="https://github.com/user-attachments/assets/4124b460-f388-4a1f-a2bb-8af56cec78bd" />
 
