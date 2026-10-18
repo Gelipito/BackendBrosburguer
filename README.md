@@ -154,7 +154,7 @@ Así tendrás el backend de Java y el frontend de React ejecutándose al mismo t
 
 <h1 style="color: red;">#2 Como crear un admin</h1>
 
-Para poder iniciar sesion en nuestar aplicacion neceistas crear un admin , lo cual es un proceso en donde el archivo "ComoCrearUnAdmin" lo tiene en detalle
+Para poder iniciar sesion en nuestra aplicacion necesitas crear un admin , lo cual es un proceso en donde el archivo "ComoCrearUnAdmin" lo tiene en detalle.
 
 
 
