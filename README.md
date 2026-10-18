@@ -10,7 +10,7 @@
 <h1 style="color: red;">#1 Configuración de la base de datos e inicio de Bros Burguer</h1>
 
 
-##1. Crear un proyecto en Supabase
+# 1. Crear un proyecto en Supabase
 
 Antes de ejecutar el proyecto, necesitas crear tu propia base de datos en Supabase.
 
@@ -28,11 +28,11 @@ Espera a que Supabase termine de crear el proyecto.
 
 Importante: Puedes utilizar el nombre de proyecto que prefieras y crear tu propia contraseña. No necesitas utilizar los mismos datos que yo.
 
-##2. Obtener los datos de conexión y configurar start-backend.sh
+# 2. Obtener los datos de conexión y configurar start-backend.sh
 
 Una vez creado el proyecto, necesitas obtener los datos que permitirán a Spring Boot conectarse a tu base de datos.
 
-2.1. Obtener los datos de conexión
+### 2.1. Obtener los datos de conexión
 
 Abre tu proyecto en Supabase.
 
@@ -44,7 +44,7 @@ Copia los datos de conexión que aparecen para esta opción.
 
 Supabase te proporcionará información como el host, el puerto, el nombre de la base de datos y el usuario. La contraseña será la que configuraste al crear el proyecto.
 
-2.2. Reemplazar los datos en start-backend.sh
+### 2.2. Reemplazar los datos en start-backend.sh
 
 Descarga o clona el repositorio de Bros Burguer y abre la carpeta del backend.
 
@@ -94,7 +94,7 @@ Importante: No publiques tus contraseñas en GitHub ni compartas el archivo con 
 
 
 
-##3 Cómo iniciar el backend de Bros Burguer
+# 3 Cómo iniciar el backend de Bros Burguer
 
 ### 1. Abre Git Bash
 
