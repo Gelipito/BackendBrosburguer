@@ -72,10 +72,12 @@ SUPABASE_DB_PASSWORD
 
 Por ejemplo, las variables tendrán una estructura similar a esta:
 
-```bash
-export SUPABASE_DB_URL='jdbc:postgresql://TU_HOST:TU_PUERTO/TU_BASE_DE_DATOS?sslmode=require'
-export SUPABASE_DB_USERNAME='TU_USUARIO'
-export SUPABASE_DB_PASSWORD='TU_CONTRASEÑA'
+ ```bash
+ export SUPABASE_DB_URL='jdbc:postgresql://TU_HOST:TU_PUERTO/TU_BASE_DE_DATOS?sslmode=require'
+ export SUPABASE_DB_USERNAME='TU_USUARIO'
+ export SUPABASE_DB_PASSWORD='TU_CONTRASEÑA '
+```
+
 
 Ten en cuenta lo siguiente:
 
