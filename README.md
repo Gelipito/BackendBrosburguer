@@ -1,9 +1,11 @@
-Tabla de introduccion
+## Tabla de Contenido / Introducción
 
-1.Configuración de la base de datos e inicio de Bros Burguer
-2.Como crear un admin
-3.Modelo entidad relacion
-4. Script SQL de creación y población de tablas (schema.sql y seed.sql).
+| # | Sección | Descripción / Alcance |
+| :-: | :--- | :--- |
+| **1** | Configuración de la base de datos e inicio de Bros Burguer | Guía de conexión e inicio del sistema. |
+| **2** | Cómo crear un admin | Procedimiento para registrar o asignar privilegios de administrador. |
+| **3** | Modelo Entidad-Relación | Estructura conceptual y relacional de las tablas. |
+| **4** | Scripts SQL (`schema.sql` y `seed.sql`) | Código para la creación de tablas y datos iniciales. |
 
 <h1 style="color: red;">#1 Configuración de la base de datos e inicio de Bros Burguer</h1>
 
