@@ -72,11 +72,10 @@ SUPABASE_DB_PASSWORD
 
 Por ejemplo, las variables tendrán una estructura similar a esta:
 
+```bash
 export SUPABASE_DB_URL='jdbc:postgresql://TU_HOST:TU_PUERTO/TU_BASE_DE_DATOS?sslmode=require'
 export SUPABASE_DB_USERNAME='TU_USUARIO'
 export SUPABASE_DB_PASSWORD='TU_CONTRASEÑA'
-
-No copies literalmente los valores del ejemplo. Debes sustituir TU_HOST, TU_PUERTO, TU_BASE_DE_DATOS, TU_USUARIO y TU_CONTRASEÑA por los datos reales que te proporciona Supabase.
 
 Ten en cuenta lo siguiente:
 
