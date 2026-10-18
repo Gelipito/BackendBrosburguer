@@ -59,6 +59,11 @@ public class JwtFilter extends OncePerRequestFilter {
                         userDetailsService
                                 .loadUserByUsername(username);
 
+                                System.out.println("JWT username: " + username);
+System.out.println(
+    "Authorities: " + userDetails.getAuthorities()
+);
+
                 if (jwtService.isTokenValid(
                         token,
                         userDetails.getUsername())) {

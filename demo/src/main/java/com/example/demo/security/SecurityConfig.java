@@ -2,7 +2,7 @@ package com.example.demo.security;
 
 import java.util.List;
 // Asegúrate de importar HttpMethod en la parte superior del archivo:
-
+import jakarta.servlet.DispatcherType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -52,31 +52,18 @@ public AuthenticationManager authenticationManager(AuthenticationConfiguration c
                         session.sessionCreationPolicy(
                                 SessionCreationPolicy.STATELESS))
 
-                .authorizeHttpRequests(auth -> auth
-
-                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-
-                        .requestMatchers("/auth/**")
-                        .permitAll()
-                         // Admin only
-                 .requestMatchers("/api/ingredients/**")
-                 .hasRole("ADMIN")
-
-                .requestMatchers("/api/productos/**")
-                .hasRole("ADMIN")
-
-                // Admin or Employee
-                .requestMatchers("/api/sales/**")
-                .hasAnyRole("ADMIN")
-
-                .requestMatchers("/api/dashboard")
-                .hasAnyRole("ADMIN")
-
-                .requestMatchers("/api/predictions")
-                .hasAnyRole("ADMIN")
-
-                        .anyRequest()
-                        .authenticated())
+             
+.authorizeHttpRequests(auth -> auth
+        .dispatcherTypeMatchers(DispatcherType.ERROR).permitAll()
+        .requestMatchers("/error").permitAll()
+        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+        .requestMatchers("/auth/**").permitAll()
+        .requestMatchers("/api/ingredients/**").hasRole("ADMIN")
+        .requestMatchers("/api/productos/**").hasRole("ADMIN")
+        .requestMatchers("/api/sales/**").hasRole("ADMIN")
+        .requestMatchers("/api/dashboard").hasRole("ADMIN")
+        .requestMatchers("/api/predictions").hasRole("ADMIN")
+        .anyRequest().authenticated())
 
                 .addFilterBefore(
                         jwtFilter,
