@@ -23,7 +23,7 @@ public class IngredientService {
     // CREATE
     public Ingredient registerIngredient(IngredientRequestDTO dto){
 
-        if(ingredientDao.existsByName(dto.name().toLowerCase())){
+        if(ingredientDao.existsByName(dto.name().toLowerCase().trim())){
             throw new ResponseStatusException(
                     HttpStatus.CONFLICT,
                     "El ingrediente ya existe");
